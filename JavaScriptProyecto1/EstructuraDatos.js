@@ -3,6 +3,9 @@ const prompt = require('prompt-sync')(); // Importa la librería prompt-sync
 function estructura() {
    
     while (true) {
+
+    let condicion = true;
+
       console.log("\nMenú de opciones");
       console.log("1. Adivina el Número");
       console.log("2. Calculadora de Factorial");
@@ -19,18 +22,20 @@ function estructura() {
         case '1':
       
          const numeroRandom = Math.floor(Math.random() * 100);
-
-         while(true){
+            
+         while(condicion){
             const valorUsuario = parseInt(prompt("Ingrese el numero a adivinar:")) 
             if(numeroRandom == valorUsuario){
                 console.log("acertaste el numero");
-                return;
+                condicion = false;
             }else if(valorUsuario>numeroRandom){
                 console.log("el numero es mayor intenta uno mas bajo");
             }else if(valorUsuario<numeroRandom){
                 console.log("el numero es menor intente uno mas alto");
              }
-         }
+            }
+        estructura();
+        break;
 
      
         /*2. Calculadora de Factorial: Crea un programa que calcule el factorial de un número ingresado 
@@ -67,6 +72,9 @@ function estructura() {
             // Imprime el resultado del factorial
             console.log(`El factorial es ${i}`);
         }
+
+        estructura();
+        break;
         
         /*3. Contador de Vocales: Desarrolla un programa que cuente cuántas vocales
         distintas hay en una frase proporcionada por el usuario y muestre las 
@@ -98,6 +106,9 @@ function estructura() {
             console.log(`"o" aparece ${NumeroVocalesO} veces`);
             console.log(`"u" aparece ${NumeroVocalesU} veces`);
         }
+
+        estructura();
+        break;
             
 
         case 'salir': 
