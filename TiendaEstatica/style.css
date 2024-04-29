@@ -1,0 +1,299 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Overpass', sans-serif;
+  font-weight: normal;
+  font-size: 100%;
+  background-color: #ECF2DF;
+  margin: 0;
+}
+
+#contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+
+#central {
+  max-width: 320px;
+  width: 100%;
+}
+
+.titulo {
+  font-size: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#login {
+  width: 100%;
+  padding: 50px 30px;
+  background-color: rgb(255, 255, 255);
+
+  -webkit-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.15);
+
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+
+  box-sizing: border-box;
+}
+
+#login input {
+  font-family: 'Overpass', sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 5px 5px 5px 10px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+}
+
+#login input::placeholder {
+  font-family: 'Overpass', sans-serif;
+  color: #E4E4E4;
+}
+
+#login button {
+  font-family: 'Overpass', sans-serif;
+  font-size: 110%;
+  color: #1b262c;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 3px 3px 3px 3px;
+  -moz-border-radius: 3px 3px 3px 3px;
+  -webkit-border-radius: 3px 3px 3px 3px;
+  margin-top: 10px;
+}
+
+#login button:hover {
+  background-color: rgb(255, 255, 255);
+
+}
+
+.pie-form {
+  font-size: 90%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.producto {
+  height: 250px !important;
+  margin-top: 20%;
+}
+
+.pie-form a {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.pie-form a:hover {
+  background-color: rgb(255, 255, 255);
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  background-color: #262405;
+  width: 100%;
+  border-bottom: 2px solid black;
+  height: 100px;
+}
+
+.Inicio {
+  margin-top: 10%;
+  margin-right: 12%;
+  width: 60px;
+}
+
+.icon-cart {
+  margin-top: 7%;
+  width: 50px;
+}
+
+.menu {
+  display: flex;
+}
+
+.Inicio {
+  padding-right: 4px;
+  border-right: 2px solid black;
+}
+
+.menu {
+  margin-top: 10px;
+}
+
+.producto:hover {
+  transform: scale(1);
+}
+
+.item {
+  text-decoration: none;
+  font-size: 2rem;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+}
+
+.contenidoProductos {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  width: 230px;
+  margin: 10px;
+  background-color: white;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.img img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.info {
+  padding: 10px;
+  background-color: white;
+}
+
+.descripcion {
+  text-align: justify;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: all 2s;
+}
+
+.content {
+  width: 40%;
+  /* Modificado */
+  margin-bottom: 20px;
+}
+
+.descripcion {
+  margin: 0;
+  padding: 10px;
+  text-align: justify;
+}
+
+.nombre {
+  width: 40%;
+  background-color: lightgray;
+  padding: 60px;
+  border: 2px solid black;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.nombre h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #8C7570;
+}
+
+.boton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  margin-top: 5%;
+  width: 100%;
+
+  background-color: #594947;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.imgen {
+  width: 90%;
+  height: 60%;
+}
+
+.titulo {
+  padding: 0;
+  margin: 0;
+}
+
+.imge {
+  width: 100%;
+  height: 80%;
+}
+
+.boton:hover {
+  background-color: #594947(0, 63, 253);
+}
+
+/* Estilos responsivos */
+@media screen and (min-width: 768px) {
+  .producto {
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .content {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
+
+.producto {
+  height: 400px;
+}
+
+.img img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
